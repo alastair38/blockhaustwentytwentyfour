@@ -1,0 +1,35 @@
+.edit-post-layout__metaboxes .edit-post-meta-boxes-area__container {
+  padding: 1rem 2rem 0 2rem;
+  transition: 550ms;
+  box-shadow: 0 0 0 999em rgba(0, 0, 0, 0);
+}
+
+.edit-post-layout__metaboxes
+  .edit-post-meta-boxes-area__container:has(.postbox.acf-postbox:not(.closed)) {
+  box-shadow: 0 0 0 999em rgba(0, 0, 0, 0.8);
+}
+
+#editor .postbox.acf-postbox {
+  position: fixed;
+  left: 2rem;
+  bottom: 2rem;
+  max-height: 10%;
+  width: 75%;
+  transition: 350ms;
+  z-index: 100;
+  border: 1px solid lightgray;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
+}
+
+#editor .postbox.acf-postbox:not(.closed) {
+  max-height: 100%;
+  transition: 350ms;
+}
+
+.edit-post-meta-boxes-area .postbox-header {
+  border-top: none;
+}
