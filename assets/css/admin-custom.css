@@ -1,20 +1,50 @@
+#adminmenu li#menu-posts-blog-de,
+#adminmenu li#menu-posts-blog-fr {
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+#adminmenu li#menu-posts-blog-de {
+  border-top: 1px solid #999;
+}
+
+#adminmenu li#menu-posts-resources-de,
+#adminmenu li#menu-posts-resources-fr {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+#adminmenu li#menu-posts-resources-fr {
+  border-bottom: 1px solid #999;
+}
+
+#adminmenu div.wp-menu-image:before {
+  color: hotpink;
+}
+
 .edit-post-layout__metaboxes .edit-post-meta-boxes-area__container {
   padding: 1rem 2rem 0 2rem;
   transition: 550ms;
   box-shadow: 0 0 0 999em rgba(0, 0, 0, 0);
 }
 
-.edit-post-layout__metaboxes
-  .edit-post-meta-boxes-area__container:has(.postbox.acf-postbox:not(.closed)) {
+/* .edit-post-layout__metaboxes
+  .edit-post-meta-boxes-area__container:has(
+    .postbox.acf-postbox:not(.closed)
+  ) {
   box-shadow: 0 0 0 999em rgba(0, 0, 0, 0.8);
+} */
+
+#editor .postbox.acf-postbox:has(.lang-versions) {
+  left: calc(20%);
 }
 
 #editor .postbox.acf-postbox {
   position: fixed;
   left: 2rem;
   bottom: 2rem;
-  max-height: 10%;
-  width: 75%;
+  max-height: 30%;
+  width: 15%;
   transition: 350ms;
   z-index: 100;
   border: 1px solid lightgray;
@@ -28,8 +58,17 @@
 #editor .postbox.acf-postbox:not(.closed) {
   max-height: 100%;
   transition: 350ms;
+  width: 75%;
+  left: 2rem;
+  z-index: 101;
 }
 
 .edit-post-meta-boxes-area .postbox-header {
   border-top: none;
+}
+
+.handle-order-higher,
+.handle-order-lower,
+.handle-actions a {
+  display: none !important;
 }

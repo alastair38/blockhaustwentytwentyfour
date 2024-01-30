@@ -1,0 +1,78 @@
+<!-- wp:group {"tagName":"main","align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"}}},"layout":{"type":"constrained"}} -->
+<main
+  class="wp-block-group alignfull"
+  style="
+    padding-top: var(--wp--preset--spacing--30);
+    padding-bottom: var(--wp--preset--spacing--30);
+  "
+>
+  <!-- wp:group {"tagName":"article","align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"default"},"metadata":{"name":"Article"}} -->
+  <article class="wp-block-group alignwide">
+    <!-- wp:group {"tagName":"header","align":"wide","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"className":"split-header", "layout":{"type":"default"},"metadata":{"name":"Article Header"}} -->
+    <header
+      class="wp-block-group alignwide split-header"
+      style="margin-top: 0; margin-bottom: 0"
+    >
+      <!-- wp:group {"className":"grid grid-cols-2 contour-bg","layout":{"type":"grid","minimumColumnWidth":"150px"}} -->
+      <div class="wp-block-group grid grid-cols-2 contour-bg">
+        <!-- wp:group {"style":{"spacing":{"blockGap":"0"},"layout":{"selfStretch":"fixed","flexSize":"50%"}},"layout":{"type":"flex","orientation":"vertical","verticalAlignment":"center"}} -->
+        <div class="wp-block-group">
+          <!-- wp:blockhaus/type {"name":"blockhaus/type","data":[],"mode":"preview"} /-->
+
+          <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"default"}} -->
+          <div class="wp-block-group">
+            <!-- wp:post-title {"level":1,"style":{"typography":{"fontStyle":"normal","fontWeight":"900"}},"fontSize":"xx-large"} /-->
+
+            <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"left"}} -->
+            <div class="wp-block-group">
+              <!-- wp:blockhaus/author {"name":"blockhaus/author","mode":"preview"} /-->
+
+              <!-- wp:blockhaus/date {"name":"blockhaus/date","mode":"preview"} /-->
+
+              <!-- wp:blockhaus/places {"name":"blockhaus/places","mode":"preview"} /-->
+            </div>
+            <!-- /wp:group -->
+
+            <!-- wp:block {"ref":100} /-->
+
+            <!-- wp:blockhaus/files {"name":"blockhaus/files","mode":"preview"} /-->
+
+            <!-- wp:separator {"backgroundColor":"accent-2","className":"is-style-left"} -->
+            <hr
+              class="wp-block-separator has-text-color has-accent-2-color has-alpha-channel-opacity has-accent-2-background-color has-background is-style-left"
+            />
+            <!-- /wp:separator -->
+          </div>
+          <!-- /wp:group -->
+        </div>
+        <!-- /wp:group -->
+
+         <!-- wp:group {"className":"is-style-default","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"right"}} -->
+         <div class="wp-block-group is-style-default">
+          <!-- wp:group {"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"backgroundColor":"base-2","className":"is-style-shadow-group featured-image-wrapper","layout":{"type":"constrained"}} -->
+          <div
+            class="wp-block-group is-style-shadow-group featured-image-wrapper has-base-2-background-color has-background"
+            style="
+              padding-top: 0;
+              padding-right: 0;
+              padding-bottom: 0;
+              padding-left: 0;
+            "
+          >
+            <!-- wp:post-featured-image {"aspectRatio":"4/3","width":"","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}}}} /-->
+          </div>
+          <!-- /wp:group -->
+        </div>
+        <!-- /wp:group -->
+        </div>
+        <!-- /wp:group -->
+      </div>
+      <!-- /wp:group -->
+    </header>
+    <!-- /wp:group -->
+
+    <!-- wp:post-content {"lock":{"move":false,"remove":false},"align":"full","layout":{"type":"constrained"}} /-->
+  </article>
+  <!-- /wp:group -->
+</main>
+<!-- /wp:group -->

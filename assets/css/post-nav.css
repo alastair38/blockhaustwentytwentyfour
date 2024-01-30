@@ -1,0 +1,10 @@
+.wp-block-post-navigation-link .wp-block-post-navigation-link__arrow-previous,
+.wp-block-post-navigation-link .wp-block-post-navigation-link__arrow-next {
+  background: var(--wp--preset--color--accent-2);
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}

@@ -8,6 +8,7 @@
  * @since Twenty Twenty-Four 1.0
  */
 
+
 /**
  * Register block styles.
  */
@@ -22,28 +23,96 @@ if ( ! function_exists( 'blockhaus_block_styles' ) ) :
 	function blockhaus_block_styles() {
 
 		register_block_style(
-			'core/details',
+			'core/button',
 			array(
-				'name'         => 'arrow-icon-details',
-				'label'        => __( 'Arrow icon', 'blockhaus' ),
+				'name'         => 'plain-button',
+				'label'        => __( 'Plain', 'blockhaus' ),
 				/*
 				 * Styles for the custom Arrow icon style of the Details block
 				 */
 				'inline_style' => '
-				.is-style-arrow-icon-details {
-					padding-top: var(--wp--preset--spacing--10);
-					padding-bottom: var(--wp--preset--spacing--10);
+				.is-style-plain-button .wp-block-button__link {
+					border: none;
+					background: none;
+					padding: 0;
+					color: var(--wp--preset--color--contrast);
+					font-size: 1.2rem;
+					font-weight: 600;
 				}
-
-				.is-style-arrow-icon-details summary {
-					list-style-type: "\2193\00a0\00a0\00a0";
-				}
-
-				.is-style-arrow-icon-details[open]>summary {
-					list-style-type: "\2192\00a0\00a0\00a0";
+				.is-style-plain-button .wp-block-button__link:hover, .is-style-plain-button .wp-block-button__link:focus {
+					font-size: 1.2rem;
+					font-weight: 600;
+					background: none;
+					outline: none;
+					color: var(--wp--preset--color--contrast);
 				}',
 			)
 		);
+		
+		register_block_style(
+			'core/group',
+			array(
+				'name'         => 'outline-group',
+				'label'        => __( 'Outline', 'twentytwentyfour' ),
+				/*
+				 * Styles for the custom Arrow icon style of the Details block
+				 */
+				'inline_style' => '
+				.is-style-outline-group {
+					padding-left: var(--wp--preset--spacing--20);
+					padding-right: var(--wp--preset--spacing--20);
+					padding-block: var(--wp--preset--spacing--20);
+					border: 1px solid var(--wp--preset--color--contrast-3);
+					border-radius: var(--wp--preset--spacing--5);
+				}',
+			),
+		);
+		
+		register_block_style(
+			'core/group',
+			array(
+				'name'         => 'shadow-group',
+				'label'        => __( 'Shadow', 'twentytwentyfour' ),
+				/*
+				 * Styles for the custom Arrow icon style of the Details block
+				 */
+				'inline_style' => '
+				.is-style-shadow-group {
+					padding-left: var(--wp--preset--spacing--20);
+					padding-right: var(--wp--preset--spacing--20);
+					padding-block: var(--wp--preset--spacing--20);
+					border-radius: var(--wp--preset--spacing--5);
+					box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+					overflow: hidden;
+				}',
+			)
+		);
+		
+		register_block_style(
+			'core/group',
+			array(
+				'name'         => 'spacing-group',
+				'label'        => __( 'Spacing XL', 'twentytwentyfour' )
+			)
+		);
+		
+		register_block_style(
+			'core/post-template',
+			array(
+				'name'         => 'grid-template',
+				'label'        => __( 'Grid Template', 'twentytwentyfour' ),
+				/*
+				 * Styles for the custom Arrow icon style of the Details block
+				 */
+				'inline_style' => '
+				.wp-block-post-template.is-style-grid-template {
+					display: grid;
+					grid-template-columns: var(--grid-template-columns-fill);
+					gap: var(--wp--preset--spacing--30);
+				}',
+			)
+		);
+		
 		register_block_style(
 			'core/post-terms',
 			array(
@@ -67,6 +136,7 @@ if ( ! function_exists( 'blockhaus_block_styles' ) ) :
 				}',
 			)
 		);
+		
 		register_block_style(
 			'core/list',
 			array(
@@ -104,47 +174,106 @@ if ( ! function_exists( 'blockhaus_block_styles' ) ) :
 				}',
 			)
 		);
+		
 		register_block_style(
-			'core/heading',
+			'core/post-title',
 			array(
-				'name'         => 'asterisk',
-				'label'        => __( 'With asterisk', 'blockhaus' ),
+				'name'         => 'hidden',
+				'label'        => __( 'Visually hidden', 'twentytwentyfour' ),
 				'inline_style' => "
-				.is-style-asterisk:before {
-					content: '';
-					width: 1.5rem;
-					height: 3rem;
-					background: var(--wp--preset--color--contrast-2, currentColor);
-					clip-path: path('M11.93.684v8.039l5.633-5.633 1.216 1.23-5.66 5.66h8.04v1.737H13.2l5.701 5.701-1.23 1.23-5.742-5.742V21h-1.737v-8.094l-5.77 5.77-1.23-1.217 5.743-5.742H.842V9.98h8.162l-5.701-5.7 1.23-1.231 5.66 5.66V.684h1.737Z');
-					display: block;
-				}
-
-				/* Hide the asterisk if the heading has no content, to avoid using empty headings to display the asterisk only, which is an A11Y issue */
-				.is-style-asterisk:empty:before {
-					content: none;
-				}
-
-				.is-style-asterisk:-moz-only-whitespace:before {
-					content: none;
-				}
-
-				.is-style-asterisk.has-text-align-center:before {
-					margin: 0 auto;
-				}
-
-				.is-style-asterisk.has-text-align-right:before {
-					margin-left: auto;
-				}
-
-				.rtl .is-style-asterisk.has-text-align-left:before {
-					margin-right: auto;
-				}",
+				.is-style-hidden {
+					position: absolute;
+					width: 1px;
+					height: 1px;
+					padding: 0;
+					margin: -1px;
+					overflow: hidden;
+					clip: rect(0, 0, 0, 0);
+					white-space: nowrap;
+					border-width: 0;
+				}"
 			)
 		);
+		
+		register_block_style(
+			'core/read-more',
+			array(
+				'name'         => 'button',
+				'label'        => __( 'Read more button', 'twentytwentyfour' ),
+				/*
+				 * Styles for the custom button style of the read-more block
+				 */
+				'inline_style' => '
+				.wp-block-read-more.is-style-button {
+					background-color: var(--wp--preset--color--contrast);
+					border-radius: var(--wp--preset--spacing--5);
+					border-color: var(--wp--preset--color--contrast);
+					border-width: 0;
+					color: var(--wp--preset--color--base);
+					font-family: inherit;
+					font-size: var(--wp--preset--font-size--small);
+					font-style: normal;
+					font-weight: 500;
+					line-height: inherit;
+					padding-top: 0.6rem;
+					padding-right: 1rem;
+					padding-bottom: 0.6rem;
+					padding-left: 1rem;
+					text-decoration: none;
+				}
+				
+				.wp-block-read-more.is-style-button:hover, .wp-block-read-more.is-style-button:focus-visible { 
+					outline: 2px solid var(--wp--preset--color--contrast);
+					outline-offset: 2px;
+					color: var(--wp--preset--color--base-2);
+				}',
+			)
+		);
+		
+		
+		
+		register_block_style(
+			'core/separator',
+			array(
+				'name'         => 'left',
+				'label'        => __( 'Left aligned', 'twentytwentyfour' ),
+				/*
+				 * Styles for the custom Arrow icon style of the Details block
+				 */
+				'inline_style' => '
+				.wp-block-separator.is-style-left {
+					margin-left: 0;
+				}',
+			)
+		);
+		
 	}
 endif;
 
 add_action( 'init', 'blockhaus_block_styles' );
+
+/**
+ * Enqueue block variations.
+ */
+
+ function block_variations() {
+	wp_enqueue_script(
+	'prefix-block-variations',
+	get_template_directory_uri() . '/assets/js/block-variations.js',
+	array( 'wp-blocks')
+	);
+	
+	}
+	add_action( 'enqueue_block_editor_assets', 'block_variations' );
+	
+	/**
+ * Proper way to enqueue scripts and styles.
+ */
+function blockhaus_nav_scripts() {
+	
+	wp_enqueue_script( 'navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '1.0.0', true );
+}
+add_action( 'wp_enqueue_scripts', 'blockhaus_nav_scripts' );
 
 /**
  * Enqueue block stylesheets.
@@ -173,6 +302,46 @@ if ( ! function_exists( 'blockhaus_block_stylesheets' ) ) :
 				'src'    => get_parent_theme_file_uri( 'assets/css/button-outline.css' ),
 				'ver'    => wp_get_theme( get_template() )->get( 'Version' ),
 				'path'   => get_parent_theme_file_path( 'assets/css/button-outline.css' ),
+			)
+		);
+		
+		wp_enqueue_block_style(
+			'core/group',
+			array(
+				'handle' => 'twentytwentyfour-grid-style',
+				'src'    => get_parent_theme_file_uri( 'assets/css/grid.css' ),
+				'ver'    => wp_get_theme( get_template() )->get( 'Version' ),
+				'path'   => get_parent_theme_file_path( 'assets/css/grid.css' ),
+			)
+		);
+		
+		wp_enqueue_block_style(
+			'core/navigation',
+			array(
+				'handle' => 'twentytwentyfour-navigation-style',
+				'src'    => get_parent_theme_file_uri( 'assets/css/navigation.css' ),
+				'ver'    => wp_get_theme( get_template() )->get( 'Version' ),
+				'path'   => get_parent_theme_file_path( 'assets/css/navigation.css' ),
+			)
+		);
+		
+		wp_enqueue_block_style(
+			'core/post-template',
+			array(
+				'handle' => 'twentytwentyfour-post-template-grid-style',
+				'src'    => get_parent_theme_file_uri( 'assets/css/grid.css' ),
+				'ver'    => wp_get_theme( get_template() )->get( 'Version' ),
+				'path'   => get_parent_theme_file_path( 'assets/css/grid.css' ),
+			)
+		);
+		
+		wp_enqueue_block_style(
+			'core/post-navigation-link',
+			array(
+				'handle' => 'twentytwentyfour-post-navigation-link-style',
+				'src'    => get_parent_theme_file_uri( 'assets/css/post-nav.css' ),
+				'ver'    => wp_get_theme( get_template() )->get( 'Version' ),
+				'path'   => get_parent_theme_file_path( 'assets/css/post-nav.css' ),
 			)
 		);
 	}
@@ -204,5 +373,4 @@ if ( ! function_exists( 'blockhaus_pattern_categories' ) ) :
 endif;
 
 add_action( 'init', 'blockhaus_pattern_categories' );
-
 
