@@ -10,7 +10,7 @@ function setCurrentMenuItemClass() {
   // Check for .current-menu-item class on any item and stop if found.
   for (let i = 0; i < menuItems.length; i++) {
     if (menuItems[i].classList.contains('current-menu-item')) {
-      return;
+      menuItems[i].classList.remove('current-menu-item');
     }
   }
 
@@ -27,6 +27,7 @@ function setCurrentMenuItemClass() {
     // Note: link.href returns full URL, even if it's a relative link.
     if (linkURL === url) {
       menuItems[i].classList.add('current-menu-item');
+      link.setAttribute('aria-current', 'page');
     }
   }
 }

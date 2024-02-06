@@ -1,0 +1,57 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#comments-layout {
+  scroll-margin-top: 2rem;
+}
+
+li.depth-2 {
+  border-left: 2px solid var(--wp--preset--color--accent-2);
+  padding-left: 1.5rem;
+}
+
+li.depth-1 {
+  margin-bottom: var(--wp--preset--spacing--40);
+}
+
+ol.wp-block-comment-template {
+  padding-inline-start: 0;
+}
+
+a.comment-reply-link {
+  color: black;
+  background: var(--wp--preset--color--accent-2);
+  display: flex;
+  padding: 0.25em 0.75em;
+  width: fit-content;
+  border-radius: 30px;
+  text-transform: uppercase;
+}
+
+.comment-respond {
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  border-radius: var(--wp--preset--spacing--5);
+  background: #eeecec;
+  padding: var(--wp--preset--spacing--20);
+}
+
+.comment-reply-title {
+  font-weight: 900;
+}
+
+.required {
+  color: tomato;
+}
+
+.required-field-message {
+  display: flex;
+  gap: var(--wp--preset--spacing--5);
+  margin-top: var(--wp--preset--spacing--10);
+}
+
+#add-comment {
+  position: fixed;
+  bottom: 8rem;
+  left: 2rem;
+}

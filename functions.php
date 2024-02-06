@@ -306,12 +306,32 @@ if ( ! function_exists( 'blockhaus_block_stylesheets' ) ) :
 		);
 		
 		wp_enqueue_block_style(
+			'core/comment-template',
+			array(
+				'handle' => 'twentytwentyfour-comment-template-style',
+				'src'    => get_parent_theme_file_uri( 'assets/css/comment.css' ),
+				'ver'    => wp_get_theme( get_template() )->get( 'Version' ),
+				'path'   => get_parent_theme_file_path( 'assets/css/comment.css' ),
+			)
+		);
+		
+		wp_enqueue_block_style(
 			'core/group',
 			array(
 				'handle' => 'twentytwentyfour-grid-style',
 				'src'    => get_parent_theme_file_uri( 'assets/css/grid.css' ),
 				'ver'    => wp_get_theme( get_template() )->get( 'Version' ),
 				'path'   => get_parent_theme_file_path( 'assets/css/grid.css' ),
+			)
+		);
+		
+		wp_enqueue_block_style(
+			'core/loginout',
+			array(
+				'handle' => 'twentytwentyfour-loginout-style',
+				'src'    => get_parent_theme_file_uri( 'assets/css/loginout.css' ),
+				'ver'    => wp_get_theme( get_template() )->get( 'Version' ),
+				'path'   => get_parent_theme_file_path( 'assets/css/loginout.css' ),
 			)
 		);
 		
@@ -372,5 +392,7 @@ if ( ! function_exists( 'blockhaus_pattern_categories' ) ) :
 	}
 endif;
 
-add_action( 'init', 'blockhaus_pattern_categories' );
-
+/**
+ * LOGIN
+ */
+// require get_template_directory() . '/inc/login.php';

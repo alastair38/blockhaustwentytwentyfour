@@ -12,7 +12,7 @@
 
   <!-- wp:image {"id":846,"aspectRatio":"16/9","scale":"cover","sizeSlug":"large","linkDestination":"none"} -->
   <figure class="wp-block-image size-large">
-    <img src="http://demproj.local/wp-content/uploads/2023/12/arisa-chattasa-0LaBRkmH4fM-unsplash-1024x576.jpg" alt="" class="wp-image-846" style="aspect-ratio:16/9;object-fit:cover"/>
+    <img src="<?php echo get_template_directory_uri() . '/assets/images/notes.jpeg'; ?>" alt="" class="wp-image-846" style="aspect-ratio:16/9;object-fit:cover"/>
   </figure>
   <!-- /wp:image -->
 

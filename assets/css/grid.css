@@ -40,6 +40,10 @@
   height: min-content;
 }
 
+.w-fit {
+  width: fit-content;
+}
+
 .gap-default {
   gap: var(--wp--preset--spacing--20);
 }

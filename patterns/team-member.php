@@ -13,14 +13,15 @@
 	<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"left"}} -->
 	<div class="wp-block-group">
 		
-		<!-- wp:image {"id":2018,"aspectRatio":"1","scale":"cover","sizeSlug":"thumbnail","linkDestination":"none","style":{"layout":{"selfStretch":"fit","flexSize":null},"border":{"radius":"50%"}}} -->
-		<figure class="wp-block-image size-thumbnail has-custom-border">
-			<img src="http://demproj.local/wp-content/uploads/2023/12/elaine-150x150.jpg" alt="" class="wp-image-2018" style="border-radius:50%;aspect-ratio:1;object-fit:cover"/>
+		<!-- wp:image {"id":2018,"width":"150px","height":"150px","scale":"cover","sizeSlug":"thumbnail","linkDestination":"none","style":{"layout":{"selfStretch":"fit","flexSize":null},"border":{"radius":"100%"}}} -->
+		<figure class="wp-block-image size-thumbnail is-resized has-custom-border">
+			<img src="<?php echo get_template_directory_uri() . '/assets/images/woman-short-hair.jpg'; ?>" alt="" class="wp-image-2018" style="border-radius:100%;object-fit:cover;width:150px;height:150px"/>
 		</figure>
 		<!-- /wp:image -->
 
 		<!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"left"}} -->
 		<div class="wp-block-group">
+			
 			<!-- wp:paragraph -->
 			<p><strong>Name</strong></p>
 			<!-- /wp:paragraph -->
@@ -28,6 +29,7 @@
 			<!-- wp:paragraph {"align":"left"} -->
 			<p class="has-text-align-left">Location</p>
 			<!-- /wp:paragraph -->
+		
 		</div>
 		<!-- /wp:group -->
 		
