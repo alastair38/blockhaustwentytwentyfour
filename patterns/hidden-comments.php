@@ -2,6 +2,8 @@
 /**
  * Title: Comments
  * Slug: blockhaus/hidden-comments
+ * * Categories: testimonials
+ 
  */
 ?>
 

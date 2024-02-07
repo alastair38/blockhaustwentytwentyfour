@@ -370,27 +370,10 @@ endif;
 add_action( 'init', 'blockhaus_block_stylesheets' );
 
 /**
- * Register pattern categories.
+ * Prevent loading of patterns from WordPress.org pattern directory
  */
 
-if ( ! function_exists( 'blockhaus_pattern_categories' ) ) :
-	/**
-	 * Register pattern categories
-	 *
-	 * @since Twenty Twenty-Four 1.0
-	 * @return void
-	 */
-	function blockhaus_pattern_categories() {
-
-		register_block_pattern_category(
-			'page',
-			array(
-				'label'       => _x( 'Pages', 'Block pattern category' ),
-				'description' => __( 'A collection of full page layouts.' ),
-			)
-		);
-	}
-endif;
+ add_filter( 'should_load_remote_block_patterns', '__return_false' );
 
 /**
  * LOGIN

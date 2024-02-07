@@ -68,7 +68,7 @@
     {
       "name": "page-no-title",
       "postTypes": ["page"],
-      "title": "Page No Title"
+      "title": "Page Hidden Title"
     },
     {
       "name": "page-with-sidebar",
@@ -86,7 +86,7 @@
       "title": "Single with Sidebar"
     }
   ],
-  "patterns": ["three-columns-of-services", "clients-section"],
+  "patterns": ["cta-outcomes"],
   "settings": {
     "appearanceTools": true,
     "color": {

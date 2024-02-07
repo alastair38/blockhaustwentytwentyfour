@@ -2,7 +2,7 @@
 /**
  * Title: CTA + image
  * Slug: blockhaus/cta-outcomes
- * Categories: call-to-action, banner
+ * Categories: call-to-action
  */
 ?>
 
