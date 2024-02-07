@@ -1,3 +1,12 @@
+<?php
+/**
+ * Title: Content Meta
+ * Slug: blockhaus/content-meta
+ * Categories: hidden
+ * Inserter: no
+ */
+?>
+
 <!-- wp:blockhaus/post-meta {"name":"blockhaus/post-meta","data":{},"mode":"preview"} -->
 <!-- wp:blockhaus/date {"name":"blockhaus/date","mode":"preview"} /-->
 

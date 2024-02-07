@@ -390,3 +390,15 @@ if ($pagenow === 'wp-login.php' && empty($_REQUEST['action'])) {
     
 } 
 }
+
+function post_types_author_archives($query) {
+
+	// Add ‘videos’ post type to author archives
+	// Add your own Post types in single quotes before 'post'
+	if ( $query->is_author ) {
+			$query->set( 'post_type', array('resources', 'resources-de', 'resources-fr', 'blog-fr', 'blog-de', 'post') );
+			// Remove the action after it’s run
+			remove_action( 'pre_get_posts', 'post_types_author_archives' );
+	}
+}
+add_action( 'pre_get_posts', 'post_types_author_archives' );

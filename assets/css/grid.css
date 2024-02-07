@@ -133,6 +133,14 @@
   text-wrap: pretty;
 }
 
+/* the following adds padding-top to query loop content block where an image does not precede it */
+
+li
+  > .wp-block-group.is-style-shadow-group
+  > .wp-block-group.is-style-default:first-child {
+  padding-top: var(--wp--preset--spacing--20);
+}
+
 /* group styles css to override the global padding setting and control padding where a group variation also has a background */
 
 .polka-background {
