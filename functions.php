@@ -395,4 +395,15 @@ endif;
 /**
  * LOGIN
  */
-// require get_template_directory() . '/inc/login.php';
+
+
+// Redirect from /wp-login.php/ to /login/ 
+add_action('init', 'custom_login');
+function custom_login() {
+$home = get_bloginfo('url');
+global $pagenow;
+if ($pagenow === 'wp-login.php' && empty($_REQUEST['action'])) {
+    wp_redirect(get_bloginfo( 'url') . '/login/');
+    
+} 
+}
