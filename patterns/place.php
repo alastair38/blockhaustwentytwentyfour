@@ -6,7 +6,6 @@
  * Keywords: starter
  * Block Types: core/post-content
  * Post Types: place
- * Viewport width: 1400
  */
 ?>
 

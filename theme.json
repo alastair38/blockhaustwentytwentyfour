@@ -61,6 +61,16 @@
       "title": "Single Place"
     },
     {
+      "name": "page-de",
+      "postTypes": ["page"],
+      "title": "Default (De)"
+    },
+    {
+      "name": "page-fr",
+      "postTypes": ["page"],
+      "title": "Default (Fr)"
+    },
+    {
       "name": "page-hero",
       "postTypes": ["page", "post", "place"],
       "title": "Page With Hero Header"
@@ -78,7 +88,7 @@
     {
       "name": "page-wide",
       "postTypes": ["page", "post", "discussion"],
-      "title": "Page with wide Image"
+      "title": "Page Full Width Block Header"
     },
     {
       "name": "single-with-sidebar",
@@ -1034,11 +1044,6 @@
     },
     {
       "area": "general",
-      "name": "blog-layout",
-      "title": "Blog Layout"
-    },
-    {
-      "area": "general",
       "name": "single-layout",
       "title": "Place Layout"
     },
@@ -1049,18 +1054,13 @@
     },
     {
       "area": "uncategorized",
-      "name": "sidebar",
-      "title": "Sidebar"
-    },
-    {
-      "area": "uncategorized",
-      "name": "post-meta",
-      "title": "Post Meta"
-    },
-    {
-      "area": "uncategorized",
       "name": "comments",
       "title": "Comments Layout"
+    },
+    {
+      "area": "uncategorized",
+      "name": "posts-layout",
+      "title": "Blog Posts Layout"
     }
   ],
   "version": 2,

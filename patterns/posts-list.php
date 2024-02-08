@@ -12,7 +12,7 @@
 <div class="wp-block-group alignwide">
   
 <!-- wp:heading {"textAlign":"center","level":1,"style":{"typography":{"lineHeight":"1","fontStyle":"normal","fontWeight":"900"}},"fontSize":"xx-large"} -->
-<h1 class="wp-block-heading has-text-align-center has-xx-large-font-size" style="font-style:normal;font-weight:900;line-height:1">Watch, Read, Listen</h1>
+<h1 class="wp-block-heading has-text-align-center has-xx-large-font-size" style="font-style:normal;font-weight:900;line-height:1">{Page title}</h1>
 <!-- /wp:heading -->
 
 <!-- wp:blockhaus/archive-description {"name":"blockhaus/archive-description","mode":"preview"} /-->
@@ -36,7 +36,7 @@
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}}},"className":"is-style-default","layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
 <div class="wp-block-group is-style-default" style="padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:post-title {"isLink":true,"style":{"spacing":{"margin":{"bottom":"0"}},"typography":{"fontStyle":"normal","fontWeight":"900"}},"fontSize":"large"} /-->
 
-<!-- wp:template-part {"slug":"post-meta","theme":"blockhaustwentytwentyfour"} /-->
+<!-- wp:pattern {"slug":"blockhaus/content-meta"} /-->
 
 <!-- wp:post-excerpt {"fontSize":"small"} /--></div>
 <!-- /wp:group --></div>

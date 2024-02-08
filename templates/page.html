@@ -1,38 +1,5 @@
 <!-- wp:template-part {"slug":"header","tagName":"header","area":"header"} /-->
 
-<!-- wp:group {"tagName":"main","align":"full","layout":{"type":"constrained"},"metadata":{"name":"Main"}} -->
-<main class="wp-block-group alignfull">
-  <!-- wp:group {"tagName":"article","align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"default"},"metadata":{"name":"Article"}} -->
-  <article class="wp-block-group alignwide">
-    <!-- wp:group {"tagName":"header","align":"wide","style":{"spacing":{"margin":{"top":"0","bottom":"0"},"blockGap":"var:preset|spacing|30"}},"className":"is-style-shadow-group","layout":{"type":"default"},"metadata":{"name":"Article Header"}} -->
-    <header
-      class="wp-block-group alignwide is-style-shadow-group"
-      style="margin-top: 0; margin-bottom: 0"
-    >
-      <!-- wp:cover {"useFeaturedImage":true,"dimRatio":80,"overlayColor":"accent-2","isDark":false,"align":"full","layout":{"type":"constrained"}} -->
-      <div class="wp-block-cover alignfull is-light">
-        <span
-          aria-hidden="true"
-          class="wp-block-cover__background has-accent-2-background-color has-background-dim-80 has-background-dim"
-        ></span>
-        <div class="wp-block-cover__inner-container">
-          <!-- wp:group {"className":"is-style-default","layout":{"type":"default"}} -->
-          <div class="wp-block-group is-style-default">
-            <!-- wp:post-title {"level":1,"style":{"typography":{"textDecoration":"none","fontStyle":"normal","fontWeight":"900"},"layout":{"selfStretch":"fixed","flexSize":"50%"}},"className":"is-style-default","fontSize":"xx-large"} /-->
-
-            <!-- wp:block {"ref":100} /-->
-          </div>
-          <!-- /wp:group -->
-        </div>
-      </div>
-      <!-- /wp:cover -->
-    </header>
-    <!-- /wp:group -->
-
-    <!-- wp:post-content {"lock":{"move":false,"remove":false},"align":"full","layout":{"type":"constrained"}} /-->
-  </article>
-  <!-- /wp:group -->
-</main>
-<!-- /wp:group -->
+<!-- wp:template-part {"slug":"single-layout"} /-->
 
 <!-- wp:template-part {"slug":"footer","tagName":"footer","area":"footer"} /-->
