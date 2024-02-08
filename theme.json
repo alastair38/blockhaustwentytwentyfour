@@ -81,19 +81,9 @@
       "title": "Page Hidden Title"
     },
     {
-      "name": "page-with-sidebar",
-      "postTypes": ["page"],
-      "title": "Page With Sidebar"
-    },
-    {
       "name": "page-wide",
       "postTypes": ["page", "post", "discussion"],
       "title": "Page Full Width Block Header"
-    },
-    {
-      "name": "single-with-sidebar",
-      "postTypes": ["post"],
-      "title": "Single with Sidebar"
     }
   ],
   "patterns": ["cta-outcomes"],
