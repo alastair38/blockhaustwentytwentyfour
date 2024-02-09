@@ -81,6 +81,16 @@
       "title": "Page Hidden Title"
     },
     {
+      "name": "page-no-title-fr",
+      "postTypes": ["page"],
+      "title": "Page Hidden Title (FR)"
+    },
+    {
+      "name": "page-no-title-de",
+      "postTypes": ["page"],
+      "title": "Page Hidden Title (DE)"
+    },
+    {
       "name": "page-wide",
       "postTypes": ["page", "post", "discussion"],
       "title": "Page Full Width Block Header"
