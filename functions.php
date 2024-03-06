@@ -217,10 +217,10 @@ if ( ! function_exists( 'blockhaus_block_styles' ) ) :
 					font-style: normal;
 					font-weight: 500;
 					line-height: inherit;
-					padding-top: 0.6rem;
-					padding-right: 1rem;
-					padding-bottom: 0.6rem;
-					padding-left: 1rem;
+					padding-top: 0.6em;
+					padding-right: 1em;
+					padding-bottom: 0.6em;
+					padding-left: 1em;
 					text-decoration: none;
 				}
 				

@@ -27,6 +27,10 @@
   width: fit-content;
 }
 
+.wp-block-navigation-item.open-on-click .wp-block-navigation-submenu__toggle {
+  line-height: 1;
+}
+
 [aria-label='Main Navigation'] a.wp-block-navigation-item__content,
 [aria-label='Main Navigation (FR)'] a.wp-block-navigation-item__content,
 [aria-label='Main Navigation (DE)'] a.wp-block-navigation-item__content {
@@ -51,8 +55,8 @@
   a.wp-block-navigation-item__content,
 [aria-label='Main Navigation (FR)']
   .current-menu-item
-  a.wp-block-Main
-  Navigation-item__content,
+  a.wp-block-navigation-item__content,
+Navigation-item__content,
 [aria-label='Main Navigation (DE)']
   .current-menu-item
   a.wp-block-navigation-item__content,

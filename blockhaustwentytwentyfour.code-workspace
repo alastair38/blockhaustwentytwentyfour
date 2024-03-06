@@ -1,11 +1,14 @@
 {
-	"folders": [
-		{
-			"path": "."
-		},
-		{
-			"path": "../../plugins/blockhaus-functionality"
-		}
-	],
-	"settings": {}
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "../../plugins/blockhaus-functionality"
+    },
+    {
+      "path": "../../plugins/easy-font-resize"
+    }
+  ],
+  "settings": {}
 }
