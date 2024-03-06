@@ -1,7 +1,7 @@
 <?php
 /**
- * Title: List of CPTs w/ images, flexible grid
- * Slug: blockhaus/posts-list-cpt
+ * Title: List of CPTs w/ images, flexible grid [German]
+ * Slug: blockhaus/posts-list-cpt-de
  * Categories: query, posts
  * Block Types: core/query
  */
@@ -25,7 +25,7 @@
     <div class="wp-block-query alignwide">
       <!-- wp:query-no-results -->
       <!-- wp:paragraph -->
-      <p>No posts were found.</p>
+      <p>Aucun poste n'a été trouvé.</p>
       <!-- /wp:paragraph -->
       <!-- /wp:query-no-results -->
 
@@ -53,7 +53,7 @@
 <!-- wp:post-excerpt {"fontSize":"small"} /-->
 
 <!-- wp:blockhaus/versions {"name":"blockhaus/versions","mode":"preview"} /-->
-<!-- wp:read-more {"content":"View place","className":"is-style-button"} /-->
+<!-- wp:read-more {"content":"Ort sehen","className":"is-style-button"} /-->
 </div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
