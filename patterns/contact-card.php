@@ -17,14 +17,14 @@
   <!-- /wp:image -->
 
   <!-- wp:paragraph {"align":"center","style":{"className":"pretty","layout":{"selfStretch":"fill","flexSize":null}}} -->
-  <p class="pretty has-text-align-center">If you would like to work with the {name of} project, please contact {name}.</p>
+  <p class="pretty has-text-align-center"><?php echo esc_html_x( 'If you would like to work with the {name of} project, please contact {name}.', 'Paragraph text of the contact card', 'blockhaus' ); ?></p>
   <!-- /wp:paragraph -->
 
   <!-- wp:buttons -->
   <div class="wp-block-buttons">
     <!-- wp:button -->
     <div class="wp-block-button">
-      <a class="wp-block-button__link wp-element-button" href="/">Get in touch</a>
+      <a class="wp-block-button__link wp-element-button" href="/"><?php echo esc_html_x( 'Get in touch', 'Button text of the contact card', 'blockhaus' ); ?></a>
     </div>
     <!-- /wp:button -->
   </div>

@@ -10,11 +10,6 @@
 
     <!-- wp:blockhaus/archive-description {"name":"blockhaus/archive-description","mode":"preview"} /-->
     
-    <?php 
-    
-    
-   ;?>
-
     <!-- wp:separator {"backgroundColor":"accent-2"} -->
     <hr
       class="wp-block-separator has-text-color has-accent-2-color has-alpha-channel-opacity has-accent-2-background-color has-background"
@@ -25,7 +20,7 @@
     <div class="wp-block-query alignwide">
       <!-- wp:query-no-results -->
       <!-- wp:paragraph -->
-      <p>No posts were found.</p>
+      <p><?php echo esc_html_x( 'No content was found', 'No results text of the Posts list CPT pattern', 'blockhaus' ); ?></p>
       <!-- /wp:paragraph -->
       <!-- /wp:query-no-results -->
 
@@ -53,7 +48,7 @@
 <!-- wp:post-excerpt {"fontSize":"small"} /-->
 
 <!-- wp:blockhaus/versions {"name":"blockhaus/versions","mode":"preview"} /-->
-<!-- wp:read-more {"content":"View place","className":"is-style-button"} /-->
+<!-- wp:read-more {"content":"<?php echo esc_html_x( 'View place', 'Read more text of the Posts list CPT pattern', 'blockhaus' ); ?>","className":"is-style-button"} /-->
 </div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

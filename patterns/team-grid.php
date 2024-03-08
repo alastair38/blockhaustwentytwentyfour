@@ -14,11 +14,11 @@
   <div class="wp-block-group alignwide">
     
     <!-- wp:heading {"align":"wide","style":{"typography":{"fontStyle":"normal","fontWeight":"900"}},"fontSize":"large"} -->
-    <h2 class="wp-block-heading alignwide has-large-font-size" style="font-style:normal;font-weight:900">Team name / location</h2>
+    <h2 class="wp-block-heading alignwide has-large-font-size" style="font-style:normal;font-weight:900"><?php echo esc_html_x( 'Team Name / Location', 'Title text of the Team Grid pattern', 'blockhaus' ); ?></h2>
     <!-- /wp:heading -->
 
     <!-- wp:paragraph -->
-    <p>Some intro text about your team.</p>
+    <p><?php echo esc_html_x( 'Some introductory text about your team.', 'Paragraph text of the Team Grid pattern', 'blockhaus' ); ?></p>
     <!-- /wp:paragraph -->
 
   </div>

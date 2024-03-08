@@ -21,7 +21,7 @@
   
     <!-- wp:heading {"level":2,"style":{"typography":{"fontStyle":"normal","fontWeight":"900","textTransform":"none"}},"fontSize":"medium"} -->
     <h2 class="wp-block-heading has-medium-font-size" style="font-style:normal;font-weight:900;text-transform:none">
-    Article title here <?php echo $post_id;?>
+    <?php echo esc_html_x( 'Article title here', 'Title text of the highlight block', 'blockhaus' ); ?>
     </h2>
     <!-- /wp:heading -->
 
@@ -29,7 +29,7 @@
     <div class="wp-block-buttons">
       <!-- wp:button {"className":"is-style-fill"} -->
       <div class="wp-block-button is-style-fill">
-        <a class="wp-block-button__link wp-element-button" href="/">More information</a>
+        <a class="wp-block-button__link wp-element-button" href="/"><?php echo esc_html_x( 'More information', 'Button text of the highlight block', 'blockhaus' ); ?></a>
       </div>
       <!-- /wp:button -->
     </div>

@@ -23,11 +23,11 @@
 		<div class="wp-block-group">
 			
 			<!-- wp:paragraph -->
-			<p><strong>Name</strong></p>
+			<p><strong><?php echo esc_html_x( 'Name.', 'Name text of the Team member pattern', 'blockhaus' ); ?></strong></p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:paragraph {"align":"left"} -->
-			<p class="has-text-align-left">Location</p>
+			<p class="has-text-align-left"><?php echo esc_html_x( 'Location.', 'Location text of the Team member pattern', 'blockhaus' ); ?></p>
 			<!-- /wp:paragraph -->
 		
 		</div>

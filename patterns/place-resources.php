@@ -8,7 +8,7 @@
 
 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"className":"is-style-default","layout":{"type":"default"},"metadata":{"name":"Place Resources"}} -->
 <div class="wp-block-group alignwide is-style-default"><!-- wp:heading {"style":{"typography":{"fontStyle":"normal","fontWeight":"900"}},"fontSize":"large"} -->
-<h2 class="wp-block-heading has-large-font-size" style="font-style:normal;font-weight:900">Resources</h2>
+<h2 class="wp-block-heading has-large-font-size" style="font-style:normal;font-weight:900"><?php echo esc_html_x( 'Resources', 'Title text of the Place Resources section', 'blockhaus' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:query {"queryId":2,"query":{"perPage":3,"pages":0,"offset":0,"postType":"resources","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"taxQuery":{"place-taxonomy":[15]},"parents":[]}} -->
@@ -36,7 +36,7 @@
 
 <!-- wp:query-no-results -->
 <!-- wp:paragraph {"placeholder":"Add text or blocks that will display when a query returns no results."} -->
-<p>We are regularly adding content. Please check back soon.</p>
+<p><?php echo esc_html_x( 'We are regularly adding content. Please check back soon.', 'No results text of the Place Resources section', 'blockhaus' ); ?></p>
 <!-- /wp:paragraph -->
 <!-- /wp:query-no-results --></div>
 <!-- /wp:query --></div>

@@ -19,11 +19,11 @@
       <div class="wp-block-group">
     
         <!-- wp:heading {"level":1,"style":{"elements":{"link":{"color":{"text":"var:preset|color|contrast"}}},"typography":{"fontStyle":"normal","fontWeight":"900"}},"textColor":"contrast","fontSize":"xx-large"} -->
-        <h1 class="wp-block-heading has-contrast-color has-text-color has-link-color has-xx-large-font-size" style="font-style:normal;font-weight:900">EnACT-Dem</h1>
+        <h1 class="wp-block-heading has-contrast-color has-text-color has-link-color has-xx-large-font-size" style="font-style:normal;font-weight:900"><?php echo esc_html_x( 'EnACT-Dem', 'Title text of the home hero section', 'blockhaus' ); ?></h1>
         <!-- /wp:heading -->
 
         <!-- wp:paragraph {"style":{"typography":{"fontWeight":"300"}},"fontSize":"medium"} -->
-        <p class="has-medium-font-size" style="font-weight:300">Centring the lived experience of dementia with policy, practice and community development</p>
+        <p class="has-medium-font-size" style="font-weight:300"><?php echo esc_html_x( 'Centring the lived experience of dementia with policy, practice and community development', 'Paragraph text of the home hero section', 'blockhaus' ); ?></p>
         <!-- /wp:paragraph -->
 
         <!-- wp:separator {"backgroundColor":"accent-2","className":"is-style-left"} -->

@@ -17,11 +17,13 @@
 
 <!-- wp:group {"align":"wide","style":{"layout":{"selfStretch":"fixed","flexSize":"100%"}},"layout":{"type":"flex","orientation":"vertical","verticalAlignment":"center"}} -->
 <div class="wp-block-group alignwide"><!-- wp:heading {"style":{"typography":{"fontStyle":"normal","fontWeight":"900"}},"fontSize":"large"} -->
-<h2 class="wp-block-heading has-large-font-size" style="font-style:normal;font-weight:900">The Project</h2>
+<h2 class="wp-block-heading has-large-font-size" style="font-style:normal;font-weight:900"><?php echo esc_html_x( 'The Project', 'Title text of the Split reverse block', 'blockhaus' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"left","style":{"typography":{"lineHeight":"1.2"},"layout":{"selfStretch":"fixed","flexSize":"50%"}},"fontSize":"medium-large","fontFamily":"system-sans-serif"} -->
-<p class="has-text-align-left has-system-sans-serif-font-family has-medium-large-font-size" style="line-height:1.2">People with dementia prefer to 'age in place'.  This means being able to remain at home and continue to be part of the local community.</p>
+<p class="has-text-align-left has-system-sans-serif-font-family has-medium-large-font-size" style="line-height:1.2">
+<?php echo esc_html_x( 'People with dementia prefer to "age in place".  This means being able to remain at home and continue to be part of the local community.', 'First paragraph text of the Split reverse block', 'blockhaus' ); ?>
+</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
@@ -29,12 +31,12 @@
 <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"},"spacing":{"blockGap":"var:preset|spacing|40"}},"className":"is-style-default","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group is-style-default"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"100%"}},"layout":{"type":"flex","orientation":"vertical","verticalAlignment":"center"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.2"},"layout":{"selfStretch":"fit","flexSize":null}},"fontSize":"medium-large","fontFamily":"system-sans-serif"} -->
-<p class="has-system-sans-serif-font-family has-medium-large-font-size" style="line-height:1.2">Communities provide the relationships, experiences and opportunities for people with dementia to live a better life.</p>
+<p class="has-system-sans-serif-font-family has-medium-large-font-size" style="line-height:1.2"><?php echo esc_html_x( 'Communities provide the relationships, experiences and opportunities for people with dementia to live a better life.', 'Second paragraph text of the Split reverse block', 'blockhaus' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"left"}} -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="http://demproj.local/about/">Find out more about the project</a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/about"><?php echo esc_html_x( 'Find out more about the project', 'Button link text of the Split reverse block', 'blockhaus' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->

@@ -8,11 +8,11 @@
 
 <!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}},"backgroundColor":"accent-2","className":"is-style-spacing-group","layout":{"type":"default"},"metadata":{"name":"Place Articles"}} -->
 <div class="wp-block-group alignwide is-style-spacing-group has-accent-2-background-color has-background" style="margin-top:var(--wp--preset--spacing--50);margin-bottom:var(--wp--preset--spacing--50)"><!-- wp:heading {"style":{"typography":{"fontStyle":"normal","fontWeight":"900"}},"fontSize":"large"} -->
-<h2 class="wp-block-heading has-large-font-size" style="font-style:normal;font-weight:900">Articles</h2>
+<h2 class="wp-block-heading has-large-font-size" style="font-style:normal;font-weight:900"><?php echo esc_html_x( 'Articles', 'Title text of the Place Articles section', 'blockhaus' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Here are the latest blog posts from the {place name} team.</p>
+<p><?php echo esc_html_x( 'Here are the latest blog posts from the team.', 'Paragraph text of the Place Articles section', 'blockhaus' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:spacer {"height":"1em"} -->
@@ -40,7 +40,7 @@
 
 <!-- wp:query-no-results -->
 <!-- wp:paragraph {"placeholder":"Add text or blocks that will display when a query returns no results."} -->
-<p>We are regularly adding content. Please check back soon.</p>
+<p><?php echo esc_html_x( 'We are regularly adding content. Please check back soon.', 'No results text of the Place Articles section', 'blockhaus' ); ?></p>
 <!-- /wp:paragraph -->
 <!-- /wp:query-no-results --></div>
 <!-- /wp:query --></div>

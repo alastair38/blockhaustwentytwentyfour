@@ -11,7 +11,7 @@
 <div class="wp-block-group is-style-shadow-group has-base-2-background-color has-background" style="min-height:0px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)">
 
   <!-- wp:paragraph {"align":"center","style":{"layout":{"selfStretch":"fill","flexSize":null},"typography":{"fontStyle":"normal","fontWeight":"900"}}} -->
-  <p class="has-text-align-center" style="font-style:normal;font-weight:900"><a href="http://demproj.local/team/" data-type="page" data-id="2017">Meet the EnACT-Dem team</a>
+  <p class="has-text-align-center" style="font-style:normal;font-weight:900"><a href="http://demproj.local/team/" data-type="page" data-id="2017"><?php echo esc_html_x( 'Meet the EnACT-Dem team', 'Paragraph text of the Team Card pattern', 'blockhaus' ); ?></a>
   </p>
   <!-- /wp:paragraph -->
 

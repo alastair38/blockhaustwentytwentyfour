@@ -1,16 +1,29 @@
-[aria-label='Languages'] {
+[aria-label='Languages'],
+[aria-label='Langues'],
+[aria-label='Sprachen'] {
   font-size: var(--wp--preset--font-size--small);
   /* position: fixed;
   bottom: 1rem;
   right: 1rem; */
   /* background: var(--wp--preset--color--contrast);
-  color: var(--wp--preset--color--base);
+  
   padding-inline: 0.25rem;
   border-radius: 30px; */
   z-index: 10;
+  color: var(--wp--preset--color--base);
 }
 
 [aria-label='Languages']
+  .wp-block-navigation
+  .has-child
+  .wp-block-navigation-submenu__toggle[aria-expanded='true']
+  ~ .wp-block-navigation__submenu-container,
+[aria-label='Langues']
+  .wp-block-navigation
+  .has-child
+  .wp-block-navigation-submenu__toggle[aria-expanded='true']
+  ~ .wp-block-navigation__submenu-container,
+[aria-label='Sprachen']
   .wp-block-navigation
   .has-child
   .wp-block-navigation-submenu__toggle[aria-expanded='true']

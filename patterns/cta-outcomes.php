@@ -21,18 +21,18 @@
   <!-- /wp:group -->
 
   <!-- wp:heading {"textAlign":"center","style":{"typography":{"fontStyle":"normal","fontWeight":"900"}},"fontSize":"large","fontFamily":"body"} -->
-  <h2 class="wp-block-heading has-text-align-center has-body-font-family has-large-font-size" style="font-style:normal;font-weight:900">{CTA title}</h2>
+  <h2 class="wp-block-heading has-text-align-center has-body-font-family has-large-font-size" style="font-style:normal;font-weight:900"><?php echo esc_html_x( 'More information', 'Button text of the highlight block', 'blockhaus' ); ?>{CTA title}</h2>
   <!-- /wp:heading -->
 
   <!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"1.5rem"}},"fontFamily":"heading"} -->
-  <p class="has-text-align-center has-heading-font-family" style="font-size:1.5rem">Add your call to action text here, update the image and feel free to change the image background or even add a background color to the whole block.</p>
+  <p class="has-text-align-center has-heading-font-family" style="font-size:1.5rem"><?php echo esc_html_x( 'Add your call to action text here, update the image and feel free to change the image background or even add a background color to the whole block.', 'Paragraph text of the CTA + Image block', 'blockhaus' ); ?></p>
   <!-- /wp:paragraph -->
 
   <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
   <div class="wp-block-buttons">
     <!-- wp:button -->
     <div class="wp-block-button">
-      <a class="wp-block-button__link wp-element-button">{CTA Link Text}</a>
+      <a class="wp-block-button__link wp-element-button"><?php echo esc_html_x( '{CTA Link Text}', 'Button link text of the CTA + Image block', 'blockhaus' ); ?></a>
     </div>
     <!-- /wp:button -->
   </div>

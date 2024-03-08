@@ -405,7 +405,7 @@
     "useRootPaddingAwareAlignments": true
   },
   "styles": {
-    "css": "header.wp-block-template-part {background: var(--wp--preset--color--base-2); position: sticky; top: 0; left: 0; right: 0; z-index: 100;} .wpavefrsz.wpavefrsz-theme-dark {background: var(--wp--preset--color--base-2); padding-inline: var(--wp--preset--spacing--10); padding-block: var(--wp--preset--spacing--5); border-radius: var(--wp--preset--spacing--5); box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25); outline: 2px solid currentColor;}",
+    "css": "header.wp-block-template-part {background: var(--wp--preset--color--contrast); position: sticky; top: 0; left: 0; right: 0; z-index: 100;} .wpavefrsz.wpavefrsz-theme-dark {background: var(--wp--preset--color--base-2); padding-inline: var(--wp--preset--spacing--10); padding-block: var(--wp--preset--spacing--5); border-radius: var(--wp--preset--spacing--5); box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25); outline: 2px solid currentColor;}",
     "blocks": {
       "core/avatar": {
         "border": {

@@ -10,16 +10,16 @@
 <!-- wp:group {"style":{"color":{"background":"#cd9ddc"},"spacing":{"blockGap":"var:preset|spacing|40"}},"className":"is-style-shadow-group polka-background places","layout":{"type":"default"},"metadata":{"name":"Places"}} -->
 <div class="wp-block-group is-style-shadow-group polka-background places has-background" style="background-color:#cd9ddc"><!-- wp:group {"align":"full","style":{"layout":{"selfStretch":"fixed","flexSize":"40%"}},"className":"is-style-default","layout":{"type":"flex","orientation":"vertical","verticalAlignment":"center"}} -->
 <div class="wp-block-group alignfull is-style-default"><!-- wp:heading {"style":{"typography":{"fontStyle":"normal","fontWeight":"900"}},"fontSize":"large"} -->
-<h2 class="wp-block-heading has-large-font-size" style="font-style:normal;font-weight:900">Places</h2>
+<h2 class="wp-block-heading has-large-font-size" style="font-style:normal;font-weight:900"><?php echo esc_html_x( 'Places', 'Title text of the Places CTA block', 'blockhaus' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.2"}},"fontSize":"medium-large","fontFamily":"system-sans-serif"} -->
-<p class="has-system-sans-serif-font-family has-medium-large-font-size" style="line-height:1.2">Our team and project sites are located in Canada, Germany and the United Kingdom.</p>
+<p class="has-system-sans-serif-font-family has-medium-large-font-size" style="line-height:1.2"><?php echo esc_html_x( 'Our team and project sites are located in Canada, Germany and the United Kingdom.', 'Paragraph text of the Places CTA block', 'blockhaus' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"left"}} -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/places">View all our places</a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/places"><?php echo esc_html_x( 'View all our places', 'Button link text of the Places CTA block', 'blockhaus' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->

@@ -13,7 +13,9 @@
   <div class="wp-block-group alignwide">
     
     <!-- wp:paragraph -->
-    <p><?php echo esc_html_x( 'Place content here and do not forget to update the "Locations / Places" filter in the articles and resources blocks queries to the correct place name. If your location/place name does not yet exist, you can add it via the "Places" link in left-hand menu of the site admin area', 'blockhaus' ); ?></p>
+    <p>
+    <?php echo esc_html_x( 'Place content here and do not forget to update the "Locations / Places" filter in the articles and resources blocks queries to the correct place name. If your location/place name does not yet exist, you can add it via the "Places" link in left-hand menu of the site admin area.', 'Text of the Place pattern', 'blockhaus' ); ?>
+    </p>
     <!-- /wp:paragraph -->
 
   <!-- wp:pattern {"slug":"blockhaus/place-articles"} /-->
