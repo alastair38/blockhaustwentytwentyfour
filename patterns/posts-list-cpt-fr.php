@@ -25,7 +25,7 @@
     <div class="wp-block-query alignwide">
       <!-- wp:query-no-results -->
       <!-- wp:paragraph -->
-      <p>Aucun poste n'a été trouvé.</p>
+      <p><?php echo esc_html_x( "Aucun poste n'a été trouvé", 'No results text of the Posts list CPT pattern', 'blockhaus' ); ?></p>
       <!-- /wp:paragraph -->
       <!-- /wp:query-no-results -->
 
@@ -53,7 +53,7 @@
 <!-- wp:post-excerpt {"fontSize":"small"} /-->
 
 <!-- wp:blockhaus/versions {"name":"blockhaus/versions","mode":"preview"} /-->
-<!-- wp:read-more {"content":"Voir le lieu","className":"is-style-button"} /-->
+<!-- wp:read-more {"content":"<?php echo esc_html_x( 'En savoir plus', 'Read more text of the Posts list CPT pattern', 'blockhaus' ); ?>","className":"is-style-button"} /-->
 </div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
