@@ -48,7 +48,7 @@
 <!-- wp:post-excerpt {"fontSize":"small"} /-->
 
 <!-- wp:blockhaus/versions {"name":"blockhaus/versions","mode":"preview"} /-->
-<!-- wp:read-more {"content":"<?php echo esc_html_x( 'Read more', 'Read more text of the Posts list CPT pattern', 'blockhaus' ); ?>","className":"is-style-button"} /-->
+<!-- wp:blockhaus/read-more {"name":"blockhaus/read-more","data":{},"mode":"preview"} /-->
 </div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
