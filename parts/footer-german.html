@@ -1,20 +1,32 @@
-<!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|50"},"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|10"},"blockGap":"var:preset|spacing|30"},"elements":{"link":{"color":{"text":"var:preset|color|base-2"}}}},"backgroundColor":"contrast","textColor":"base-2","layout":{"type":"constrained"}} -->
+<!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|50"},"blockGap":"var:preset|spacing|20","padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"}}},"layout":{"type":"default"}} -->
 <div
-  class="wp-block-group has-base-2-color has-contrast-background-color has-text-color has-background has-link-color"
+  class="wp-block-group"
   style="
     margin-top: var(--wp--preset--spacing--50);
     padding-top: var(--wp--preset--spacing--30);
-    padding-bottom: var(--wp--preset--spacing--10);
+    padding-bottom: var(--wp--preset--spacing--30);
   "
 >
+  <!-- wp:paragraph {"align":"center","style":{"typography":{"fontStyle":"normal","fontWeight":"700"}}} -->
+  <p class="has-text-align-center" style="font-style: normal; font-weight: 700">
+    EnACT Dem wird finanziert durch ...
+  </p>
+  <!-- /wp:paragraph -->
+
   <!-- wp:blockhaus/funders {"name":"blockhaus/funders","data":{},"mode":"preview"} /-->
+</div>
+<!-- /wp:group -->
 
-  <!-- wp:group {"className":"grid grid-cols-fit","layout":{"type":"constrained"}} -->
-  <div class="wp-block-group grid grid-cols-fit">
-    <!-- wp:navigation {"ref":2626,"overlayMenu":"never","layout":{"type":"flex","orientation":"horizontal","justifyContent":"center"},"style":{"typography":{"fontStyle":"normal","fontWeight":"400"},"spacing":{"blockGap":"var:preset|spacing|30"}},"fontSize":"small"} /-->
-  </div>
-  <!-- /wp:group -->
-
-  <!-- wp:blockhaus/copyright {"name":"blockhaus/copyright","mode":"preview"} /-->
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30","padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}},"elements":{"link":{"color":{"text":"var:preset|color|base-2"}}}},"backgroundColor":"contrast","textColor":"base-2","layout":{"type":"constrained"}} -->
+<div
+  class="wp-block-group has-base-2-color has-contrast-background-color has-text-color has-background has-link-color"
+  style="
+    padding-top: var(--wp--preset--spacing--40);
+    padding-right: var(--wp--preset--spacing--20);
+    padding-bottom: var(--wp--preset--spacing--40);
+    padding-left: var(--wp--preset--spacing--20);
+  "
+>
+  <!-- wp:blockhaus/copyright {"name":"blockhaus/copyright","data":{},"mode":"preview"} /-->
 </div>
 <!-- /wp:group -->
