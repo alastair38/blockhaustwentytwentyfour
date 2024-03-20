@@ -26,7 +26,8 @@
 
 <!-- wp:post-title {"style":{"typography":{"fontStyle":"normal","fontWeight":"700","fontSize":"1.25rem"}}} /-->
 
-<!-- wp:read-more {"content":"View Article","className":"is-style-button"} /--></div>
+<!-- wp:blockhaus/read-more {"name":"blockhaus/read-more","data":{},"mode":"preview"} /-->
+</div>
 <!-- /wp:group -->
 <!-- /wp:post-template -->
 

@@ -22,7 +22,7 @@
 <!-- /wp:separator --></div>
 <!-- /wp:group -->
 
-<!-- wp:read-more {"content":"View Resource","style":{"layout":{"selfStretch":"fit","flexSize":null}},"className":"is-style-button"} /--></div>
+<!-- wp:blockhaus/read-more {"name":"blockhaus/read-more","data":{},"mode":"preview"} /--></div>
 <!-- /wp:group -->
 <!-- /wp:post-template -->
 
