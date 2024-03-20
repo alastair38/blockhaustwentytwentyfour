@@ -19,9 +19,7 @@
     <!-- wp:query {"queryId":16,"query":{"perPage":10,"pages":0,"offset":"0","postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"align":"wide","layout":{"type":"constrained"}} -->
     <div class="wp-block-query alignwide">
       <!-- wp:query-no-results -->
-      <!-- wp:paragraph -->
-      <p><?php echo esc_html_x( 'No content was found', 'No results text of the Posts list CPT pattern', 'blockhaus' ); ?></p>
-      <!-- /wp:paragraph -->
+      <!-- wp:blockhaus/no-results {"name":"blockhaus/no-results","data":{},"mode":"preview"} /-->
       <!-- /wp:query-no-results -->
 
       <!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"left":"0","right":"0"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
