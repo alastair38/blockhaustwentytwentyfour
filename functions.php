@@ -97,6 +97,27 @@ if ( ! function_exists( 'blockhaus_block_styles' ) ) :
 		);
 		
 		register_block_style(
+			'core/image',
+			array(
+				'name'         => 'polaroid-image',
+				'label'        => __( 'Polaroid', 'twentytwentyfour' ),
+				/*
+				 * Styles for the custom Arrow icon style of the Details block
+				 */
+				'inline_style' => '
+				.is-style-polaroid-image {
+					padding-left: var(--wp--preset--spacing--20);
+					padding-right: var(--wp--preset--spacing--20);
+					padding-block: var(--wp--preset--spacing--20);
+					background: var(--wp--preset--color--base-2);
+					border-radius: var(--wp--preset--spacing--5);
+					box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+					font-weight: 700;
+				}',
+			),
+		);
+		
+		register_block_style(
 			'core/post-template',
 			array(
 				'name'         => 'grid-template',
