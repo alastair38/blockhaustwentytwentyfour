@@ -129,8 +129,8 @@ if ( ! function_exists( 'blockhaus_block_styles' ) ) :
 				.wp-block-post-template.is-style-grid-template {
 					display: grid;
 					grid-template-columns: var(--grid-template-columns-fill);
-					column-gap: var(--wp--preset--spacing--40);
-					row-gap: var(--wp--preset--spacing--40);
+					column-gap: var(--wp--preset--spacing--30);
+					row-gap: var(--wp--preset--spacing--30);
 				}',
 			)
 		);
