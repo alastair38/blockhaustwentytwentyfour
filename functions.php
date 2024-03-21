@@ -231,7 +231,6 @@ if ( ! function_exists( 'blockhaus_block_styles' ) ) :
 					border-radius: var(--wp--preset--spacing--5);
 					border-color: var(--wp--preset--color--contrast);
 					border-width: 0;
-					width: max-content;
 					color: var(--wp--preset--color--base);
 					font-family: inherit;
 					font-size: var(--wp--preset--font-size--small);
