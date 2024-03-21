@@ -87,10 +87,21 @@ Navigation-item__content,
   outline-offset: 2px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 900px) {
   /* hamburger button */
   .wp-block-navigation__responsive-container-open {
     display: block !important;
+  }
+
+  button.wp-block-navigation__responsive-container-open {
+    color: var(--wp--preset--color--base);
+  }
+
+  button.wp-block-navigation__responsive-container-close,
+  button.wp-block-navigation__responsive-container-open {
+    border-radius: 30px;
+    border: 1px solid currentColor;
+    padding: 0.25em 0.75em;
   }
 
   /* full menu */
