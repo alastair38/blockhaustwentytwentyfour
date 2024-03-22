@@ -8,6 +8,12 @@
  * @since Twenty Twenty-Four 1.0
  */
 
+ // Excerpt support for pages
+
+add_action('after_setup_theme', function () {
+  add_post_type_support('page', 'excerpt');
+});
+
 
 /**
  * Register block styles.
