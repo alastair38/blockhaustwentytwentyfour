@@ -6,18 +6,20 @@
  */
 ?>
 
-<!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}},"backgroundColor":"accent-2","className":"is-style-spacing-group","layout":{"type":"default"},"metadata":{"name":"Place Articles"}} -->
-<div class="wp-block-group alignwide is-style-spacing-group has-accent-2-background-color has-background" style="margin-top:var(--wp--preset--spacing--50);margin-bottom:var(--wp--preset--spacing--50)"><!-- wp:heading {"style":{"typography":{"fontStyle":"normal","fontWeight":"900"}},"fontSize":"large"} -->
-<h2 class="wp-block-heading has-large-font-size" style="font-style:normal;font-weight:900"><?php echo esc_html_x( 'Articles', 'Title text of the Place Articles section', 'blockhaus' ); ?></h2>
+<!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}, "blockGap":"var:preset|spacing|30"}},"backgroundColor":"accent-2","className":"is-style-spacing-group","layout":{"type":"default"},"metadata":{"name":"Place Articles"}} -->
+<div class="wp-block-group alignwide is-style-spacing-group has-accent-2-background-color has-background" style="margin-top:var(--wp--preset--spacing--50);margin-bottom:var(--wp--preset--spacing--50)">
+
+<!-- wp:heading {"style":{"typography":{"fontStyle":"normal","fontWeight":"900"}},"fontSize":"large"} -->
+<h2 class="wp-block-heading has-large-font-size" style="font-style:normal;font-weight:900">
+  <?php echo esc_html_x( 'Articles', 'Title text of the Place Articles section', 'blockhaus' ); ?>
+</h2>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph -->
-<p><?php echo esc_html_x( 'Here are the latest blog posts from the team.', 'Paragraph text of the Place Articles section', 'blockhaus' ); ?></p>
+<!-- wp:paragraph {"fontSize":"medium"} -->
+<p class="has-medium-font-size">
+  <?php echo esc_html_x( 'Here are the latest blog posts from the team.', 'Paragraph text of the Place Articles section', 'blockhaus' ); ?>
+</p>
 <!-- /wp:paragraph -->
-
-<!-- wp:spacer {"height":"1em"} -->
-<div style="height:1em" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
 
 <!-- wp:query {"queryId":2,"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"taxQuery":{"place-taxonomy":[15],"location":[8]}}} -->
 <div class="wp-block-query"><!-- wp:post-template {"style":{"spacing":{"blockGap":"0"}},"className":"is-style-grid-template","layout":{"type":"default","columnCount":1}} -->
@@ -31,16 +33,8 @@
 <!-- /wp:group -->
 <!-- /wp:post-template -->
 
-<!-- wp:query-pagination -->
-<!-- wp:query-pagination-previous /-->
-
-<!-- wp:query-pagination-numbers /-->
-
-<!-- wp:query-pagination-next /-->
-<!-- /wp:query-pagination -->
-
 <!-- wp:query-no-results -->
-<!-- wp:paragraph {"placeholder":"Add text or blocks that will display when a query returns no results."} -->
+<!-- wp:paragraph -->
 <p><?php echo esc_html_x( 'We are regularly adding content. Please check back soon.', 'No results text of the Place Articles section', 'blockhaus' ); ?></p>
 <!-- /wp:paragraph -->
 <!-- /wp:query-no-results --></div>
