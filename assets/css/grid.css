@@ -277,6 +277,11 @@ body {
 } */
 
 @media (min-width: 768px) {
+  .blockhaus-team
+    > .wp-block-group.is-layout-grid.wp-block-group-is-layout-grid.blockhaus-grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
+  }
+
   .blog,
   .post-type-archive-blog-de,
   .post-type-archive-blog-fr {

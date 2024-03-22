@@ -7,8 +7,8 @@ wp.blocks.registerBlockVariation('core/group', {
     align: true,
   },
   attributes: {
-    layout: { type: 'grid', minimumColumnWidth: '150px' },
-    className: 'grid grid-cols-fit',
+    layout: { type: 'grid', minimumColumnWidth: '300px' },
+    className: 'blockhaus-grid',
     ordered: true,
     namespace: 'blockhaus/core-group-grid',
   },

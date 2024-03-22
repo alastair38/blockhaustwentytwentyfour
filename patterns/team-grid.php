@@ -1,32 +1,36 @@
 <?php
 /**
- * Title: Team Grid
+ * Title: Team Layout
  * Slug: blockhaus/team-grid
  * Categories: team, about
  * Viewport width: 1400
  */
 ?>
 
-<!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"},"blockGap":"var:preset|spacing|40"}},"backgroundColor":"accent-2","className":"is-style-spacing-group team","layout":{"type":"default"},"metadata":{"name":"Team Grid"}} -->
-<div class="wp-block-group alignwide is-style-spacing-group team has-accent-2-background-color has-background" style="margin-top:var(--wp--preset--spacing--40);margin-bottom:var(--wp--preset--spacing--40)">
-
+<!-- wp:group {"align":"wide","backgroundColor":"accent-2","className":"is-style-spacing-group blockhaus-team","layout":{"type":"constrained"},"metadata":{"name":"Team Layout"}} -->
+<div class="wp-block-group alignwide is-style-spacing-group blockhaus-team has-accent-2-background-color has-background">
+  
   <!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
   <div class="wp-block-group alignwide">
     
     <!-- wp:heading {"align":"wide","style":{"typography":{"fontStyle":"normal","fontWeight":"900"}},"fontSize":"large"} -->
-    <h2 class="wp-block-heading alignwide has-large-font-size" style="font-style:normal;font-weight:900"><?php echo esc_html_x( 'Team Name / Location', 'Title text of the Team Grid pattern', 'blockhaus' ); ?></h2>
+    <h2 class="wp-block-heading alignwide has-large-font-size" style="font-style:normal;font-weight:900">
+      <?php echo esc_html_x( 'Team Name / Location', 'Title text of the Team Grid pattern', 'blockhaus' ); ?>
+    </h2>
     <!-- /wp:heading -->
 
-    <!-- wp:paragraph -->
-    <p><?php echo esc_html_x( 'Some introductory text about your team.', 'Paragraph text of the Team Grid pattern', 'blockhaus' ); ?></p>
+    <!-- wp:paragraph {"fontSize":"medium"} -->
+    <p class="has-medium-font-size">
+      <?php echo esc_html_x( 'Some introductory text about your team.', 'Paragraph text of the Team Grid pattern', 'blockhaus' ); ?>
+    </p>
     <!-- /wp:paragraph -->
 
   </div>
   <!-- /wp:group -->
 
-  <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"className":"grid","layout":{"type":"grid","minimumColumnWidth":"350px"}} -->
-  <div class="wp-block-group alignwide grid"></div>
+  <!-- wp:group {"align":"wide","className":"blockhaus-grid is-style-default","layout":{"type":"grid","minimumColumnWidth":"300px"}} -->
+  <div class="wp-block-group alignwide blockhaus-grid is-style-default"></div>
   <!-- /wp:group -->
-    
+
 </div>
 <!-- /wp:group -->
