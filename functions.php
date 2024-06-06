@@ -90,6 +90,7 @@ if ( ! function_exists( 'blockhaus_block_styles' ) ) :
 					border-radius: var(--wp--preset--spacing--5);
 					box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
 					overflow: hidden;
+					position: relative;
 				}',
 			)
 		);
