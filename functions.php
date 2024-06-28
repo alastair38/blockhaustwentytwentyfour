@@ -457,3 +457,26 @@ function blockhaus_custom_form($placeholder) {
 
 return $form;
 }
+
+function blockhaus_add_to_head() {
+	
+	if(function_exists('get_field')):
+  $google_code = get_field('google_site_verification', 'option');
+	$bing_code = get_field('bing_site_verification', 'option');
+		
+		if(is_front_page()):
+			
+			if($google_code):
+			echo '<meta name="google-site-verification" content="' . $google_code . '" />';
+			endif;
+			
+			if($bing_code):
+				echo '<meta name="msvalidate.01" content="' . $bing_code . '" />';
+				endif;
+			
+		endif;
+		
+	endif;
+	
+}
+add_action( 'wp_head', 'blockhaus_add_to_head' );
