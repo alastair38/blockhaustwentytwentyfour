@@ -8,6 +8,8 @@
  * @since Twenty Twenty-Four 1.0
  */
 
+ add_theme_support( 'automatic-feed-links' );
+
  // Excerpt support for pages
 
 add_action('after_setup_theme', function () {
